@@ -143,6 +143,11 @@ public class UserController extends BaseController {
     @PostMapping("/edit")
     @ResponseBody
     public Object edit(@Valid UserVo userVo) {
+    	//@Valid注解用于校验，所属包为：javax.validation.Valid
+//    	1/ 首先需要在实体类的相应字段上添加用于充当校验条件的注解，如：@Min,如下代码（age属于Girl类中的属性）：
+// 1/ 其次在controller层的方法的要校验的参数上添加@Valid注解，并且需要传入BindingResult对象，用于获取校验失败情况下的反馈信息，如下代码：
+
+
         List<User> list = userService.selectByLoginName(userVo);
         if (list != null && !list.isEmpty()) {
             return renderError("登录名已存在!");
