@@ -17,3 +17,7 @@ Eclipse Java EE IDE中已经包含了git，所以，就不用再额外安装了�
 右键选中“paste Repository path or URI”，如果以前使用过github，那么后续的界面上将会填好用户名等信息，最终单击确定，
 就可以将github上的代码保存到本地的git仓库中。
 展开刚下载好的Working Tree，选中指定的工程，右键选中“Import Projects”，就可以将从github上下载的工程导入到eclipse的project explorer中。
+
+###第二次添加数据
+url:https://zhidao.baidu.com/question/757294665454557164.html
+git使用教程---如有疑问，请自行百度
